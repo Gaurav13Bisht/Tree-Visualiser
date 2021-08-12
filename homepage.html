@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <style>
+        body {
+            background-color: #2F4F4F;
+            overflow: hidden;
+        }
+
+        .header {
+            text-align: center;
+            font-size: xxx-large;
+            height: 15vh;
+            width: 100vw;
+        }
+
+        .menu-head {
+            height: 10vh;
+            width: 100vw;
+        }
+
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            height: 70vh;
+            width: 100vw;
+
+        }
+
+        .order {
+            cursor: pointer;
+            border: 2px solid brown;
+            height: 25vh;
+            min-width: 30vw;
+        }
+
+        .menu :hover {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">Tree Visualiser</div>
+    <div class="menu-head">Some select the order kind of line here !!</div>
+    <div class="menu">
+        <button onclick="window.location.href='/which-order/1Leetcode.html'" class="order">
+            LeetCode Level Order
+        </button>
+        <button onclick="window.location.href='/which-order/2PrePost.html'" class="order">
+            Pre Order + Post Order
+        </button>
+        <button onclick="window.location.href='/which-order/3PreIn.html'" class="order">
+            Pre Order + In Order
+        </button>
+        <button onclick="window.location.href='/which-order/4PostIn.html'" class="order">
+            In Order + Post Order
+        </button>
+        <button onclick="window.location.href='/which-order/5LevelIn.html'" class="order">
+            Level Order + In Order
+        </button>
+        <button onclick="window.location.href='/which-order/6Pepcoding.html'" class="order">
+            Pepcoding Order
+        </button>
+    </div>
+</body>
+
+</html>

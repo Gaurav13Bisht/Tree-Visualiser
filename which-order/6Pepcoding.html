@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pepcoding Order</title>
+    <script type="module" src="https://d3js.org/d3.v7.min.js"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            overflow: auto;
+            overflow-x: hidden;
+        }
+
+        circle {
+            fill: white;
+            stroke: Brown;
+            stroke-width: 2px;
+        }
+
+        path {
+            fill: none;
+            stroke: rgb(8, 32, 2);
+        }
+
+        text {
+            /* dominant-baseline: middle; */
+            text-anchor: middle;
+        }
+
+        .homepage {
+            margin: 14px 0px 45px 16px;
+            cursor: pointer;
+            z-index: 3;
+            left: 40px;
+            border-radius: 0.6rem;
+            height: 50px;
+            width: 50px;
+            top: 30px;
+            padding: 10px;
+            background: url(/back-image.png);
+            background-color: rgb(255, 255, 255);
+            background-size: cover;
+            /* background-blend-mode: soft-light;  //for transparency*/
+        }
+
+        .homepage:hover {
+            background-color: #FAF0E6;
+        }
+
+        .header {
+            background-color: rgb(145, 238, 142);
+            height: 13vh;
+            width: 100vw;
+            position: fixed;
+            display: flex;
+        }
+
+        .inputs {
+            display: flex;
+            margin: 25px 45px 55px 25px;
+        }
+
+        .submit button {
+            height: 6vh;
+            width: 8vw;
+            margin: 18px 10px 25px 0px;
+        }
+
+        .tree {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <button onclick="window.location.href='/homepage.html'" class="homepage"></button>
+        <div class="inputs">
+            <input style="margin-left: 25px; height: 3vh; width: 30vw;" type="text" placeholder="Input Pepcoding Order">
+        </div>
+        <div class="submit">
+            <button>Submit</button>
+        </div>
+    </div>
+
+    <div style=" top: 13vh; background-color: rgb(199, 184, 184)" class="tree"></div>
+</body>
+
+<script type="module" src="../script.js"></script>
+
+</html>
