@@ -8,15 +8,29 @@
     <title>HomePage</title>
     <style>
         body {
-            background-color: #2F4F4F;
+            background: url(/images/homePageBG.jpg) no-repeat center 65px fixed;
+            /* -webkit-background-size: cover; */
+            /* -moz-background-size: cover; */
+            /* -o-background-size: cover; */
+            background-size: contain;
+            background-color: black;
             overflow: hidden;
         }
 
         .header {
-            text-align: center;
+
             font-size: xxx-large;
-            height: 15vh;
+            height: 25vh;
             width: 100vw;
+            color: rgb(255, 255, 255);
+
+        }
+
+        .headerText {
+            border-bottom: 1px solid #172253;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 12vh;
         }
 
         .menu-head {
@@ -34,22 +48,35 @@
 
         }
 
+        .menu button {
+            background-color: black;
+            color: #ffffff;
+            border-radius: 0.5rem;
+            font-size: large;
+        }
+
+        .menu :hover {
+            background-color: #09113300;
+            border: 3px solid #ffffff;
+        }
+
         .order {
             cursor: pointer;
-            border: 2px solid brown;
+            border: 3px solid #172253;
             height: 25vh;
             min-width: 30vw;
         }
 
-        .menu :hover {
+        /* .menu :hover {
             background-color: green;
-        }
+        } */
     </style>
 </head>
 
 <body>
-    <div class="header">Tree Visualiser</div>
-    <div class="menu-head">Some select the order kind of line here !!</div>
+    <div class="header">
+        <div class="headerText">Tree Visualiser</div>
+    </div>
     <div class="menu">
         <button onclick="window.location.href='/which-order/1Leetcode.html'" class="order">
             LeetCode Level Order
